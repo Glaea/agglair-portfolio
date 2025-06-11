@@ -4,12 +4,21 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Agglair | Portfolio</title>
+
+  <!-- Calligraphy font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="scripts.js" defer></script>
 </head>
 <body>
   <div id="particles-js" class="particles-bg"></div>
+  <div class="cursor-blob"></div>
+
   <header>
     <h1 class="brand">Agglair</h1>
     <nav>
@@ -19,19 +28,22 @@
       <button class="tab-btn" data-target="contact">Contact</button>
     </nav>
   </header>
+
   <main>
     <section id="about" class="tab-panel active">
       <h2>About Me</h2>
-      <p>I’m Agglair—a creator blending code, design, and motion into magical experiences.</p>
-      <a class="btn-animated" href="assets/Agglair_Resume.pdf" download>Download Resume</a>
+      <p>I’m Agglair—a creator blending code, gold aesthetics, and motion into luxurious experiences.</p>
+      <a href="assets/Agglair_Resume.pdf" class="btn-animated" download>Download Resume</a>
     </section>
+
     <section id="projects" class="tab-panel">
       <h2>Projects</h2>
       <div class="cards">
-        <div class="card"><i class="icon">💻</i><h3>Portfolio App</h3><p>React + GSAP animations.</p></div>
-        <div class="card"><i class="icon">🎨</i><h3>Design Showcase</h3><p>Interactive UI via Figma prototypes.</p></div>
+        <div class="card"><i class="icon">💻</i><h3>Portfolio App</h3><p>Black‑&‑Gold elegance with GSAP.</p></div>
+        <div class="card"><i class="icon">🎨</i><h3>Design Showcase</h3><p>Calligraphic typography meets animation.</p></div>
       </div>
     </section>
+
     <section id="gallery" class="tab-panel">
       <h2>Gallery</h2>
       <div class="gallery-grid">
@@ -41,6 +53,7 @@
         <img src="assets/image4.jpg" alt="Work 4">
       </div>
     </section>
+
     <section id="contact" class="tab-panel">
       <h2>Contact Me</h2>
       <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -51,7 +64,7 @@
       </form>
     </section>
   </main>
+
   <footer>&copy; 2025 Agglair</footer>
-  <script src="scripts.js"></script>
 </body>
-</html>
+  </html>
